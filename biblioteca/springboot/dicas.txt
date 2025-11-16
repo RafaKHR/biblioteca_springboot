@@ -1,0 +1,25 @@
+1. passo para o deploy coloque essas linhas dentro do POM.xml
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+2. passo entre na via comando e execute mvn install, antes você terá ter instalado o mvn na maquina, baixe e depois 
+configure nas variaveis de ambiente
+
+3. passo entre na pasta target e execute o comando java -jar demo.jar
+
+4. passo o bando de dados tem que está ativo
